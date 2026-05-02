@@ -33,5 +33,10 @@
     "bugs": {
         "url": "https://github.com/piotrapl/playwright-typescript-entities-api-ui-tests/issues"
     },
-    "homepage": "https://github.com/piotrapl/playwright-typescript-entities-api-ui-tests#readme"
+    "homepage": "https://github.com/piotrapl/playwright-typescript-entities-api-ui-tests#readme",
+    "dependencies": {
+        "install": "^0.13.0",
+        "npx": "^10.2.2",
+        "playwright": "^1.59.1"
+    }
 }
