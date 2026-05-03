@@ -6,15 +6,18 @@ export class NegativeFlow {
 
   async searchInvalid(
     type: SearchType,
-    value: string
+    value: string,
+    expectedRegex: RegExp
   ): Promise<NegativeAssert> {
     await this.searchPage.open();
 
     const apiResponse = await this.searchPage.searchBy(type, value);
 
     return new NegativeAssert(
-      apiResponse,
-      this.searchPage.messageLocator
+      // apiResponse,
+      this.searchPage.messageLocator,
+      expectedRegex
     );
   }
 }
+
