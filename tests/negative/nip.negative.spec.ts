@@ -1,5 +1,5 @@
 import { test } from '../../fixtures/test-fixtures';
-import { nonExistingNips } from '../../data/nonexisting-nips';
+import { nonExistingNips } from '../../data/invalid-nips';
 
 for (const dataset of nonExistingNips) {
   test(`NIP negative search: ${dataset.nip}`, async ({ negativeFlow }) => {

@@ -1,5 +1,5 @@
 import { test } from '../../fixtures/test-fixtures';
-import { existingNips } from '../../data/existing-nips';
+import { existingNips } from '../../data/valid-nips';
 
 for (const dataset of existingNips) {
   test(`NIP positive search: ${dataset.nip}`, async ({ positiveFlow }) => {

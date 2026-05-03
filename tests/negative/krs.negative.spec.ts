@@ -1,5 +1,5 @@
 import { test } from '../../fixtures/test-fixtures';
-import { nonExistingKrsNumbers } from '../../data/nonexisting-krsnumbers';
+import { nonExistingKrsNumbers } from '../../data/invalid-krsnumbers';
 
 for (const dataset of nonExistingKrsNumbers) {
   test(`KRS negative search: ${dataset.krs}`, async ({ negativeFlow }) => {
